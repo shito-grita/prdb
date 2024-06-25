@@ -1,0 +1,23 @@
+<DataGrid AutoGenerateColumns="False" IsReadOnly="True">
+    <DataGrid.Columns>
+        <DataGridTextColumn Header="Фамилия" Width="50"/>
+        <DataGridTextColumn Header="Имя" Width="30"/>
+        <DataGridTextColumn Header="Отчество" Width="50"/>
+        <DataGridTextColumn Header="Email" Width="120"/>
+        <DataGridTextColumn Header="Роль" Width="50"/>
+        <DataGridTemplateColumn Header="Редактирование" Width="*">
+            <DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                    <Button Content="Edit"/>
+                </DataTemplate>
+            </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+        <DataGridTemplateColumn Header="Фото" Width="30">
+            <DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                    <Image Source="Resources/myPhoto.jpg"/>
+                </DataTemplate>
+            </DataGridTemplateColumn.CellTemplate>
+        </DataGridTemplateColumn>
+    </DataGrid.Columns>
+</DataGrid>
